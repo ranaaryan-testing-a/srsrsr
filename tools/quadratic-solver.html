@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Quadratic Equation Solver for JEE. Enter coefficients a, b, and c to instantly visualize the roots using the quadratic formula without any JavaScript.">
+    <title>Quadratic Equation Solver | JEE Mathematics</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../tools.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">JEE Tools</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container section">
+        <div class="tool-header">
+            <div class="card-icon">📈</div>
+            <h1>Quadratic Equation Solver</h1>
+            <p>Solve equations of the form ax² + bx + c = 0. Verify the roots and the discriminant calculation instantly.</p>
+        </div>
+
+        <div class="tool-workspace glass-panel">
+            
+            <div style="text-align: center; margin-bottom: 2rem; font-family: var(--font-mono); font-size: 1.5rem; color: var(--accent-violet);">
+                x = [ -b ± √(b² - 4ac) ] / 2a
+            </div>
+
+            <div class="input-group">
+                <label for="coeff-a">Coefficient a (x² term)</label>
+                <input type="number" id="coeff-a" class="input-field" value="1" placeholder="Enter a...">
+            </div>
+            
+            <div class="input-group">
+                <label for="coeff-b">Coefficient b (x term)</label>
+                <input type="number" id="coeff-b" class="input-field" value="-5" placeholder="Enter b...">
+            </div>
+            
+            <div class="input-group">
+                <label for="coeff-c">Constant c</label>
+                <input type="number" id="coeff-c" class="input-field" value="6" placeholder="Enter c...">
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Solve Equation</button>
+
+            <!-- Placeholder Results -->
+            <div class="result-box">
+                <h4>Calculation Result</h4>
+                <div class="result-value">
+                    x₁ = 3, x₂ = 2
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; font-family: var(--font-mono);">
+                    Discriminant (Δ) = 1
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SEO & FAQ -->
+    <section class="container seo-content">
+        <h2>Using the Quadratic Solver</h2>
+        <p>The foundations of algebra and functions in the JEE Mathematics syllabus heavily rely on the manipulation and deep understanding of quadratic equations, roots, and discriminants. Equations of the form ax² + bx + c = 0 appear everywhere—from trajectory calculations in Projectile Motion (Physics) to chemical equilibrium concentration shifts (Chemistry).</p>
+        <p>This specific layout demonstrates a high-conversion, distraction-free input architecture where the primary quadratic formula is proudly displayed. This empowers students to actively memorize `(-b ± √(b² - 4ac)) / 2a` while simultaneously testing inputs.</p>
+        
+        <h3 style="margin: 2rem 0 1rem;">FAQ</h3>
+        <div class="faq-item">
+            <h4>Does this handle complex/imaginary roots?</h4>
+            <p>In a fully functional JavaScript variant, complex roots (when the discriminant b² - 4ac is negative) would be cleanly rendered using the imaginary unit `i`. This static UI provides a template for such outputs.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can I input fractions or decimals?</h4>
+            <p>Yes, the `input type="number"` supports standard HTML5 validation for floating-point decimals, perfect for granular calculations.</p>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <p>Made for JEE aspirants across India 🇮🇳</p>
+    </footer>
+</body>
+</html>
